@@ -5,7 +5,7 @@ const app = express();
 const port = 8070;
 
 app.listen(port, () => {
-    console.log('listening for request on port 8070');
+    console.log('server magic happening on port 8070');
 });
 
 app.get('/', (req, res) => {
