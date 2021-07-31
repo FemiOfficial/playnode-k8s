@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: play-node-deployment
+  labels:
+    app: play-node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: play-node
+  template:
+    metadata:
+      labels:
+        app: play-node 
+    spec:
+      containers:
+      - name: play-node
+        image: play-node
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8070
