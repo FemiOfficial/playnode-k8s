@@ -15,7 +15,7 @@ spec:
         app: play-node
     spec:
       containers:
-      - image: gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: play-node
         name: play-node
         ports:
         - containerPort: 80
